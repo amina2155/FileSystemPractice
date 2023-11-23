@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Change body background to a light gray */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-container,
+.editor-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: white;
+    /* Set container background color to white */
+    border-radius: 8px;
+    /* Add some border radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button#googleSignInBtn {
+    padding: 15px 20px;
+    /* Increase padding for the Google sign-in button */
+    cursor: pointer;
+    background-color: #4CAF50;
+    /* Set button background color to green */
+    color: white;
+    /* Set text color to white */
+    border: none;
+    border-radius: 5px;
+    /* Add border radius */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Add transition for smooth hover effect */
+}
+
+button#googleSignInBtn:hover {
+    background-color: #45a049;
+    /* Darken the button color on hover */
+}
+
+.file-list-container {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    background-color: #e0e0e0;
+    /* Light gray background */
+    border-radius: 8px;
+    overflow-y: auto;
+    /* Enable vertical scrollbar */
+    max-height: 300px;
+}
+
+.file-list {
+    margin-top: 10px;
+}
+
+.file-list div {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.file-list div:hover {
+    background-color: #d4d4d4;
+    /* Lighter background on hover */
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    background-color: #f5f5f5;
+    /* Lighter background for editor */
+    border-radius: 8px;
+    border: #45a049 solid 1px;
+    padding: 9px;
+}
+
+textarea {
+    width: calc(100% - 30px);
+    /* Adjust textarea width considering padding */
+    height: calc(100% - 30px);
+    margin-bottom: 10px;
+    resize: none;
+    /* Disable textarea resize */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.fa-edit.hidden {
+    display: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.file-item.selected {
+    background-color: lightblue;
+}
+
+.fa-edit.hidden {
+    display: none;
+    margin-left: 5px;
+    cursor: pointer;
+}

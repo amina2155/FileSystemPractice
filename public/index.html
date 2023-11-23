@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <title>Text Editor</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-container">
+      <button id="googleSignInBtn" onclick="loginWithGoogle()">Login with Google</button>
+    </div>
+    <div class="editor-container" style="display: none;">
+      <div class="file-list-container">
+        <h2>Your Files</h2>
+        <div class="file-list" id="fileList"></div>
+
+      </div>
+      <div class="editor">
+        <textarea id="editor"></textarea>
+        <div class="button-container">
+          <button onclick="saveFile()">Save</button>
+          <button onclick="newFile()">New File</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-database-compat.js"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
